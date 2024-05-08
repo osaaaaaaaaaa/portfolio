@@ -1,0 +1,393 @@
+﻿@import url(sanitize.css);
+
+body {
+    font-family: 'Open Sans', sans-serif;
+
+    background-color: #F1EEEF;
+}
+
+/*******************
+*  ヘッダー
+*******************/
+header {
+    width: 100%;
+    height: 50px;
+    position: fixed; /*固定する*/
+    top: 0px;
+    background-image: url("../img/bg04.png"); /*背景*/
+    background-size: cover; /*サイズ調整*/
+    display: flex; /*中身をflex指定*/
+    flex-direction: row; /*子を横に並べる*/
+}
+
+.logo01 {
+    width: 120px;
+    height: 100%;
+    margin-top:10px;
+    margin-left:60px;
+    opacity:100%;   /*不透明にする*/
+}
+
+     .logo01 img {
+         width:100%;
+         height:100%;
+     }
+
+/*******************
+*  見出し
+*******************/
+
+h1 {
+    width: 400px;
+    height: 129px;
+    margin-top: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    /*下からフェードイン*/
+    animation-name: H1fadeUpAnime;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+    h1 img {
+        width: 100%;
+        height: 100%;
+    }
+
+/*アニメーション設定*/
+@keyframes H1fadeUpAnime {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*******************
+*  コンテンツ
+*******************/
+
+.content-outer {
+    width: 800px; /*PC用*/
+    height: 1333px;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("../img/group04.png");
+    background-size: cover; /*サイズ調整*/
+    display: flex; /*中身をflex指定*/
+    flex-direction: column; /*子を縦に並べる*/
+    /*下からフェードイン*/
+    animation-name: H1fadeUpAnime;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+    .content-outer textarea {
+        width: 507px;
+        height: 180px;
+        margin-top: 180px;
+        margin-left: auto;
+        margin-right: auto;
+        resize: none; /*拡大縮小禁止*/
+    }
+
+.sendButton {
+    margin-top: 40px;
+    margin-left: 310px;
+    /*調整*/
+    width: auto;
+    background: none;
+    border: 0;
+    overflow: visible;
+}
+
+    .sendButton img {
+        width: 200px;
+        height: 50px;
+    }
+
+/*******************
+*  作品紹介
+*******************/
+    .work-outer {
+        width: 100%; /*PC用*/
+        margin-top: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+    }
+
+.textbox01 {
+    width: 10%;
+    height: 4%;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.textImg {
+    width: 100%;
+    height: 100%;
+}
+
+.buttonImg01 {
+    position: absolute;
+    left: 930px;
+    top: 4500px;
+    /*調整*/
+    width: auto;
+    background: none;
+    border: 0;
+    overflow: visible;
+}
+
+    .buttonImg01:hover {
+        opacity: 0.5;
+    }
+
+.buttonImg02 {
+    position: absolute;
+    right: 930px;
+    top: 5085px;
+    /*調整*/
+    width: auto;
+    background: none;
+    border: 0;
+    overflow: visible;
+}
+
+.buttonImg02:hover {
+    opacity: 0.5;
+}
+
+.work-area {
+    width: 100%; /*PC用*/
+    margin-top:0px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex; /*中身をflex指定*/
+    flex-direction: row; /*子を横に並べる*/
+    justify-content: space-around; /*左右の余白を均等割り*/
+
+    align-items: center;
+    overflow: hidden;   /*はみ出した部分は隠す*/
+}
+
+.work-wrapper {
+    margin-top: 0px;
+    display: flex; /*中身をflex指定*/
+    animation-name: slideAnim; /*アニメーションの名前*/
+    animation-duration: 15s; /*アニメーションの一回分の長さ*/
+    animation-iteration-count: infinite; /*アニメーションループ [infinite:無限]*/
+    animation-timing-function: linear; /*アニメーションの進行具合を操作*/
+    animation-fill-mode: both; /*アニメーションの開始時と終了時の状態*/
+}
+
+    .work-wrapper img {
+        width: 800px;
+        height: 440px;
+        margin-right: 150px;
+        margin-left: 150px;
+        border: 1px solid #ddd;
+    }
+
+@keyframes slideAnim {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateX(-100%);   /*左へスライド*/
+    }
+}
+
+.textbox02 {
+    width: 15%;
+    height:13%;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.viewImg {
+    width: 100%;
+    height: 100%;
+}
+
+/*******************
+*  フッター
+*******************/
+.footer {
+    width: 100%;
+    margin-top: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #8F8C8C;
+}
+
+    .footer img {
+        width: 20%;
+        height: 17%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 40%;
+        margin-right: 40%;
+    }
+
+/*******************
+*  フェードの設定
+*******************/
+
+/* fadeUp */
+
+.CssfadeUp {
+    animation-name: fadeUpAnime;    /*アニメーションの名前を設定*/
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0; /*透明*/
+}
+
+@keyframes fadeUpAnime {
+    from {
+        opacity: 0; /*透明*/
+        transform: translateY(100px);   /*100px下から出現*/
+    }
+
+    to {
+        opacity: 1; /*不透明*/
+        transform: translateY(0);   /*元の位置へ*/
+    }
+}
+
+/**********************************
+*   幅が狭まったときの処理
+**********************************/
+
+/*解像度①*/
+@media (max-width: 1000px) {
+
+    /*******************
+    *  ヘッダー
+    *******************/
+
+    .logo01 {
+        margin-left: 30px;
+    }
+
+    /*******************
+    *  見出し
+    *******************/
+
+    h1 {
+        width: 533px;
+        height: 199.875px;
+        margin-top: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /*******************
+    *  コンテンツ
+    *******************/
+
+    .content-outer {
+        width: 533px;
+        margin-top: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /*******************
+    *  フッター
+    *******************/
+    .footer {
+        width: 100%;
+        margin-top: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #8F8C8C;
+    }
+
+        .footer img {
+            width: 25%;
+            height: 21%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 35%;
+            margin-right: 35%;
+        }
+}
+
+/*解像度②*/
+@media (max-width: 900px) {
+    .logo01 {
+        width: 100px;
+        height: 80%;
+        margin-top: 8px;
+        margin-left: 8px;
+    }
+}
+
+/*解像度③*/
+@media (max-width: 576px) {
+
+    /*******************
+    *  ヘッダー
+    *******************/
+
+    .logo01 {
+        width: 100px;
+        height: 80%;
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+
+    /*******************
+    *  見出し
+    *******************/
+
+    h1 {
+        width: 380px;
+        height: 143px;
+        margin-top: 250px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /*******************
+    *  コンテンツ
+    *******************/
+
+    .content-outer {
+        width: 380px;
+        margin-top: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /*******************
+    *  フッター
+    *******************/
+    .footer {
+        width: 100%;
+        margin-top: 350px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #8F8C8C;
+    }
+
+        .footer img {
+            width: 30%;
+            height: 25.5%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 35%;
+            margin-right: 35%;
+        }
+}

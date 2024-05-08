@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/workStyle03.css" />
+</head>
+<body>
+
+    <!--*******************
+    *  ヘッダー
+    ********************-->
+    <header style="z-index:10000">
+        <!--全面に出す-->
+        <div class="logo01">
+            <a href="./index.html">
+                <!--リンク-->
+                <img src="img/logo_top.png">
+            </a>
+        </div>
+
+        <div class="logo02">
+            <a href="./contact.html">
+                <!--リンク-->
+                <img src="img/logo_Contact.png">
+            </a>
+        </div>
+    </header>
+
+    <!--*******************
+    *  見出し
+    ********************-->
+    <h1>
+        <img src="work-img/Work_text.png">
+    </h1>
+
+    <!--*******************
+    *  コンテンツ
+    ********************-->
+
+    <div class="content-outer">
+
+        <h2>
+            <img src="work-img/work03/work_title03.png" style="width: 290px; height: 70px;">
+            <img src="work-img/Unity.png" style="width: 150px; height: 40px;">
+        </h2>
+
+        <!-- スライドの外枠 -->
+        <div class="slide-wrapper">
+            <!-- スライド（コンテンツ） -->
+            <div id="slide" class="slide">
+                <div>
+                    <!--スライド１-->
+                    <img src="work-img/work03/ss0.png">
+                </div>
+                <div>
+                    <!--スライド２-->
+                    <img src="work-img/work03/ss1.png">
+                </div>
+                <div>
+                    <!--スライド３-->
+                    <img src="work-img/work03/ss2.png">
+                </div>
+            </div>
+
+            <!-- 左右のボタン -->
+            <button id="prev" class="prev"><img src="work-img/ui_01.png"></button>
+            <button id="next" class="next"><img src="work-img/ui_02.png"></button>
+
+            <!-- インジケーター [スライドの枚数分用意する] -->
+            <ul class="indicator" id="indicator">
+                <li class="list"></li>
+                <li class="list"></li>
+                <li class="list"></li>
+            </ul>
+        </div>
+
+        <div class="overviewArea">
+            <p> 《 概要 》</p>
+            Chill Gardian</p>
+            <p> [ルール：ゲームシーンのみテクスチャ使用禁止] [テーマ：シン・雪合戦ライク2Dアクション]</p>
+            <p> 北の寒き大地に理不尽なクソデカ雪だるまドラゴンが突如出現！！</p>
+            <p> 貧弱でなまくらな雪だるまがそんなボスに高価な大砲をそろえて立ち向かいます！！！</p>
+            <p> Wキーで雪玉を拾い、Wキーで大砲を打ち、理不尽な砲撃をかまします。</p>
+            <p> オンラインランキング対応。クリアタイムで他社と競おう</p>
+        </div>
+
+    </div>
+
+    <!--*******************
+    *  フッター
+    ********************-->
+
+    <div class="footer">
+        <img src="img/footer.png">
+    </div>
+
+    <!--*******************
+    *  java
+    ********************-->
+    <!--CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/button-slider.js"></script>   <!--自作のスクリプト-->
+</body>
+</html>

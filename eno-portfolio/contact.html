@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/contactStyle.css" />
+</head>
+<body>
+
+    <!--*******************
+    *  ヘッダー
+    ********************-->
+    <header style="z-index:10000">
+        <!--全面に出す-->
+        <div class="logo01">
+            <a href="./index.html">
+                <!--リンク-->
+                <img src="img/logo_top.png">
+            </a>
+        </div>
+    </header>
+
+    <!--*******************
+    *  見出し
+    ********************-->
+    <h1>
+        <img src="img/Contact_Text.png">
+    </h1>
+
+    <!--*******************
+    *  コンテンツ
+    ********************-->
+
+    <style>
+        .margin01 {
+            width: 507px;
+            height: 40px;
+            margin-top: 320px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .margin02 {
+            width: 507px;
+            height: 40px;
+            margin-top: 180px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+
+    <div class="content-outer">
+        <input type="text" name="userName" class="margin01">
+        <input type="text" name="mail" class="margin02">
+        <input type="text" name="subject" class="margin02">
+        <textarea id="message" name="message"></textarea>
+
+        <button class="sendButton">
+             <img src="img/sendButton.png">
+        </button>
+    </div>
+
+    <!--*******************
+    *  フッター
+    ********************-->
+
+    <div class="footer">
+        <img src="img/footer.png">
+    </div>
+
+    <!--*******************
+    *  java
+    ********************-->
+    <!--CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/RuiEno-fade.js"></script>   <!--自作のスクリプト-->
+    <script src="js/RuiEno-slider.js"></script>   <!--自作のスクリプト-->
+</body>
+</html>
