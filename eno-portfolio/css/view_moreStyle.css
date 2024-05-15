@@ -51,7 +51,7 @@ header {
 *******************/
 
 h1 {
-    width: 400px;
+    width: 300px;
     height: 129px;
     margin-top: 120px;
     margin-left: auto;
@@ -87,15 +87,13 @@ h1 {
 
 .content-outer {
     border-style: solid; /*ボーダーライン*/
-    border-radius: 70px; /*丸み具合*/
+    border-radius: 40px; /*丸み具合*/
     border-block-color: #594425; /*ボーダーラインの色*/
     background-color: #FFFFFF;
     width: 900px; /*PC用*/
     margin-top: 60px;
     margin-left: auto;
     margin-right: auto;
-    display: flex; /*中身をflex指定*/
-    flex-direction: column; /*子を縦に並べる*/
     /*下からフェードイン*/
     animation-name: H1fadeUpAnime;
     animation-duration: 2s;
@@ -103,34 +101,23 @@ h1 {
     opacity: 0;
 }
 
-    .content-outer img {
-        width: 380px;
-        height: 220px;
-    }
-
-.area1 {
-    width: 100%;
-    margin-top: 80px;
-    margin-left: auto;
-    margin-right: auto;
-    /*フェードする際に、透明な状態から始める*/
-    opacity: 0;
+ul {
     display: flex; /*中身をflex指定*/
-    flex-direction: row; /*子を横に並べる*/
+    flex-wrap: wrap;
     justify-content: space-around; /*左右の余白を均等割り*/
+    margin-right: 50px;
 }
 
-.area2 {
-    width: 100%;
-    margin-top: 80px;
-    margin-bottom:80px; /*一番下のエリアにのみ設定*/
-    margin-left: auto;
-    margin-right: auto;
-    /*フェードする際に、透明な状態から始める*/
-    opacity: 0;
-    display: flex; /*中身をflex指定*/
-    flex-direction: row; /*子を横に並べる*/
-    justify-content: space-around; /*左右の余白を均等割り*/
+li {
+    list-style: none;
+    width: 50%;
+    height:50%;
+    padding: 30px;
+}
+
+li img {
+    width:100%;
+    height:100%;
 }
 
 /*******************
@@ -202,9 +189,9 @@ h1 {
     *******************/
 
     h1 {
-        width: 533px;
-        height: 199.875px;
-        margin-top: 200px;
+        width: 250px;
+        height: 120px;
+        margin-top: 90px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -214,24 +201,24 @@ h1 {
     *******************/
 
     .content-outer {
-        width: 533px;
-        margin-top: 400px;
+        width: 650px;
+        margin-top: 40px;
         margin-left: auto;
         margin-right: auto;
     }
 
-    .area1 {
-        width: 100%;
-        margin-top: 0px;
-        margin-left: auto;
-        margin-right: auto;
+    ul {
+        display: flex; /*中身をflex指定*/
+        flex-wrap: wrap;
+        justify-content: space-around; /*左右の余白を均等割り*/
+        margin-right: 48px;
     }
 
-    .area2 {
-        width: 100%;
-        margin-top: 500px;
-        margin-left: auto;
-        margin-right: auto;
+    li {
+        list-style: none;
+        width: 50%;
+        height: 50%;
+        padding: 10px;
     }
 
     /*******************
@@ -239,7 +226,7 @@ h1 {
     *******************/
     .footer {
         width: 100%;
-        margin-top: 500px;
+        margin-top: 90px;
         margin-left: auto;
         margin-right: auto;
         background-color: #8F8C8C;
@@ -270,6 +257,63 @@ h1 {
         margin-top: 20px;
         margin-left: 30px;
     }
+
+    /*******************
+    *  見出し
+    *******************/
+
+    h1 {
+        width: 200px;
+        height: 90px;
+        margin-top: 80px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /*******************
+    *  コンテンツ
+    *******************/
+
+    .content-outer {
+        width: 500px;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    ul {
+        display: flex; /*中身をflex指定*/
+        flex-wrap: wrap;
+        justify-content: space-around; /*左右の余白を均等割り*/
+        margin-right: 43px;
+    }
+
+    li {
+        list-style: none;
+        width: 50%;
+        height: 50%;
+        padding: 5px;
+    }
+
+    /*******************
+    *  フッター
+    *******************/
+    .footer {
+        width: 100%;
+        margin-top: 90px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #8F8C8C;
+    }
+
+        .footer img {
+            width: 30%;
+            height: 25.5%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 35%;
+            margin-right: 35%;
+        }
 }
 
 /*解像度③*/
@@ -294,40 +338,27 @@ h1 {
     }
 
     /*******************
-    *  見出し
-    *******************/
-
-    h1 {
-        width: 380px;
-        height: 143px;
-        margin-top: 250px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    /*******************
     *  コンテンツ
     *******************/
 
     .content-outer {
         width: 380px;
-        margin-top: 400px;
+        margin-top: 20px;
         margin-left: auto;
         margin-right: auto;
     }
 
-    .area1 {
-        width: 100%;
-        margin-top: 0px;
-        margin-left: auto;
-        margin-right: auto;
+    ul {
+        display: flex; /*中身をflex指定*/
+        justify-content: space-around; /*左右の余白を均等割り*/
+        margin-right: 40px;
     }
 
-    .area2 {
+    li {
+        list-style: none;
         width: 100%;
-        margin-top: 250px;
-        margin-left: auto;
-        margin-right: auto;
+        height: 100%;
+        padding: 20px;
     }
 
     /*******************
@@ -335,7 +366,7 @@ h1 {
     *******************/
     .footer {
         width: 100%;
-        margin-top: 350px;
+        margin-top: 90px;
         margin-left: auto;
         margin-right: auto;
         background-color: #8F8C8C;
